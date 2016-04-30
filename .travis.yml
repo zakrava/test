@@ -1,0 +1,6 @@
+language: php
+php:
+- '5.6'
+before_install:
+- openssl aes-256-cbc -K $encrypted_ad91eb6ab032_key -iv $encrypted_ad91eb6ab032_iv
+  -in id_rsa.pub.enc -out ~\/.ssh/id_rsa.pub -d
